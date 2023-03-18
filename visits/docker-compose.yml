@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redis-server:
+    image: 'redis'
+  node-app:
+    build: .
+    ports:
+      - '4001:8081'
+#we add ports to open connection between local machine and the containers 
